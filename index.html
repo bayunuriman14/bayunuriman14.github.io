@@ -65,7 +65,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <!--====================================================
                         ABOUT
     ======================================================-->
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section class="resume-section p-3 p-lg-5 d-flex d-column section-animate" id="about">
           <div class="my-auto" >
               <img src="img/logo-s.png" class="img-fluid mb-3" alt="">
               <h1 class="mb-0"><span style="color: #D3D3D3;">Bayu</span>
@@ -111,7 +111,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <!--====================================================
                         EXPERIENCE
     ======================================================-->      
-      <section class="resume-section p-3 p-lg-5 " id="experience">
+      <section class="resume-section p-3 p-lg-5 section-animate" id="experience">
           <div class="row my-auto">
               <div class="col-12">
                 <h2 class="  text-center">Experience</h2>
@@ -171,184 +171,211 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       </section>
 
     <!--====================================================
-                        PORTFOLIO
+                        PORTFOLIO (Featured Projects - Aditya style)
     ======================================================-->      
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column section-animate" id="portfolio"> 
           <div class="row my-auto">
-              <div class="col-12">
-                <h2 class="  text-center">Portfolio</h2>
-                <div class="mb-5 heading-border"></div>
-              </div>
-              <div class="col-md-12">
-                <div class="port-head-cont">
-                  <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="web">Web Design</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="mobile">Mobile Apps</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="graphics">Graphics Design</button> 
-                </div>
+              <div class="col-12 text-center mb-5">
+                <h2 class="text-center">Featured Projects</h2>
+                <div class="mb-3 heading-border"></div>
+                <p class="text-muted mb-0">A showcase of my recent work, demonstrating my expertise in web and software development.</p>
               </div>
           </div>
-          <div class="row my-auto">
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/soco/soco1.PNG" alt="Soco Magicalladin">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/soco/soco1.PNG" alt="">
-                  </a>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">Soco Magicalladin</h3>
+                          <p class="project-card-desc">Social commerce enabling sellers to sell without capital; products from suppliers, share links for buyers to checkout.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Laravel</span>
+                          </div>
+                          <a href="#portfolioModal1" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
+                      </div>
+                  </div>
               </div>
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/customs/customs1.PNG" alt="Customs BC">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/customs/customs1.PNG" alt="">
-                  </a>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">Customs BC</h3>
+                          <p class="project-card-desc">Stock & excise/tax automation for PLB Ecommerce; Lazada is one of its clients.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Laravel</span>
+                              <span class="project-tag">Queue Job</span>
+                          </div>
+                          <a href="#portfolioModal2" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
+                      </div>
+                  </div>
               </div>
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/store2go/store2go1.PNG" alt="Store2Go">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/store2go/store2go1.PNG" alt="">
-                  </a>
-              </div>              
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">Store2Go</h3>
+                          <p class="project-card-desc">Warehouse management system connected to Tokopedia, Shopee, TikTok.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Laravel</span>
                           </div>
+                          <a href="#portfolioModal3" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
                       </div>
-                      <img class="img-fluid" src="img/portfolio/mrbs/mrbs1.PNG" alt="">
-                  </a>
+                  </div>
               </div>
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/mrbs/mrbs1.PNG" alt="MRBS">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/uniairone/uniairone1.PNG" alt="">
-                  </a>
-              </div>              
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">MRBS</h3>
+                          <p class="project-card-desc">Web app for room and meeting booking with Zoom & Meeting API integration.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Laravel</span>
                           </div>
+                          <a href="#portfolioModal4" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
                       </div>
-                      <img class="img-fluid" src="img/portfolio/evoucher/evoucher1.PNG" alt="">
-                  </a>
+                  </div>
               </div>
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/uniairone/uniairone1.PNG" alt="UniairOne">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/inmeterai/inmeterai1.PNG" alt="">
-                  </a>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">UniairOne</h3>
+                          <p class="project-card-desc">HRIS web app for employee data, department, leave, permission, mutation.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Laravel</span>
+                              <span class="project-tag">Cron job</span>
+                          </div>
+                          <a href="#portfolioModal5" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
+                      </div>
+                  </div>
               </div>
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/evoucher/evoucher1.PNG" alt="Evoucher">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/tps/tps1.PNG" alt="">
-                  </a>
-              </div> 
-              <div class="col-sm-4 portfolio-item filter web">
-                  <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">Evoucher</h3>
+                          <p class="project-card-desc">Finance management: cash advance, settlement, approval, accounting, cashier.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Laravel</span>
+                              <span class="project-tag">Cron job</span>
                           </div>
+                          <a href="#portfolioModal6" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
                       </div>
-                      <img class="img-fluid" src="img/portfolio/rpa/rpa1.PNG" alt="">
-                  </a>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/inmeterai/inmeterai1.PNG" alt="Inmeterai">
+                      </div>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">Inmeterai</h3>
+                          <p class="project-card-desc">Peruri e-stamp sales: single stamp, bulk stamp; payment via Finpay.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">Spring Boot</span>
+                              <span class="project-tag">React JS</span>
+                              <span class="project-tag">Docker</span>
+                          </div>
+                          <a href="#portfolioModal7" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/tps/tps1.PNG" alt="TPS Online">
+                      </div>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">TPS Online</h3>
+                          <p class="project-card-desc">Desktop app for gate in/out data automatically sent to customs.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">C#</span>
+                          </div>
+                          <a href="#portfolioModal8" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 project-card-wrap">
+                  <div class="project-card">
+                      <div class="project-card-img">
+                          <img class="img-fluid" src="img/portfolio/rpa/rpa1.PNG" alt="RPA Manifest PLB">
+                      </div>
+                      <div class="project-card-body">
+                          <h3 class="project-card-title">RPA Manifest PLB Ecommerce</h3>
+                          <p class="project-card-desc">Automation for repetitive gate-out processes; manifest sent to Bea Cukai.</p>
+                          <div class="project-card-tags">
+                              <span class="project-tag">UIBot</span>
+                              <span class="project-tag">Python</span>
+                          </div>
+                          <a href="#portfolioModal9" class="btn btn-general btn-white btn-project-detail" data-toggle="modal">Detail</a>
+                      </div>
+                  </div>
               </div>
           </div>
       </section>
 
     <!--====================================================
-                        SKILLS
+                        SKILLS (ciangoon.dev style + logos)
     ======================================================-->       
-      <section class=" d-flex flex-column" id="skills">
-         <div class="p-lg-5 p-3 skill-cover">
-          <h3 class="text-center text-white">Skills</h3>
-          <div class="row text-center my-auto "> 
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>PHP</p>
-                  </div>
+      <section class="d-flex flex-column section-animate" id="skills">
+         <div class="p-lg-5 p-4 stack-section">
+          <h2 class="stack-title">Skills</h2>
+          <div class="stack-categories">
+            <div class="stack-category">
+              <h4 class="stack-category-title">Frontend</h4>
+              <div class="stack-tags">
+                <span class="stack-tag"><i class="devicons devicons-javascript"></i> JavaScript</span>
+                <span class="stack-tag"><i class="devicons devicons-react"></i> React JS</span>
+                <span class="stack-tag"><i class="devicons devicons-javascript_badge"></i> TypeScript</span>
               </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>Laravel</p>
-                  </div>
+            </div>
+            <div class="stack-category">
+              <h4 class="stack-category-title">Backend</h4>
+              <div class="stack-tags">
+                <span class="stack-tag"><i class="devicons devicons-php"></i> PHP</span>
+                <span class="stack-tag"><i class="devicons devicons-laravel"></i> Laravel</span>
+                <span class="stack-tag"><i class="devicons devicons-codeigniter"></i> CodeIgniter</span>
+                <span class="stack-tag"><i class="devicons devicons-java"></i> Java Spring Boot</span>
+                <span class="stack-tag"><i class="devicons devicons-dotnet"></i> C#</span>
+                <span class="stack-tag"><i class="devicons devicons-nodejs"></i> Web Socket</span>
+                <span class="stack-tag"><i class="devicons devicons-code"></i> Swagger</span>
               </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>Javascript</p>
-                  </div>
+            </div>
+            <div class="stack-category">
+              <h4 class="stack-category-title">Database</h4>
+              <div class="stack-tags">
+                <span class="stack-tag"><i class="devicons devicons-mysql"></i> MySQL</span>
+                <span class="stack-tag"><i class="devicons devicons-msql_server"></i> SQL Server</span>
+                <span class="stack-tag"><i class="devicons devicons-database"></i> RabbitMQ</span>
               </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>React JS</p>
-                  </div>
+            </div>
+            <div class="stack-category">
+              <h4 class="stack-category-title">Tools</h4>
+              <div class="stack-tags">
+                <span class="stack-tag"><i class="devicons devicons-docker"></i> Docker</span>
+                <span class="stack-tag"><i class="devicons devicons-terminal"></i> RPA</span>
+                <span class="stack-tag"><i class="devicons devicons-ubuntu"></i> Ubuntu</span>
+                <span class="stack-tag"><i class="devicons devicons-linux"></i> CentOS</span>
+                <span class="stack-tag"><i class="devicons devicons-github_badge"></i> CI/CD GitHub Actions</span>
+                <span class="stack-tag"><i class="devicons devicons-terminal_badge"></i> Grafana</span>
+                <span class="stack-tag"><i class="devicons devicons-terminal_badge"></i> Prometheus</span>
+                <span class="stack-tag"><i class="devicons devicons-terminal_badge"></i> Loki</span>
+                <span class="stack-tag"><i class="devicons devicons-aws"></i> AWS</span>
+                <span class="stack-tag"><i class="devicons devicons-google-cloud-platform"></i> Alibaba Cloud</span>
               </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>Java Springboot</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>MySQL</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>SQL Server</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>Docker</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>RPA</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>C#</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>Setting Server</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <p>CI CD</p>
-                  </div>
-              </div>
+            </div>
           </div>
          </div> 
       </section>
@@ -357,7 +384,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <!--====================================================
                           CONTACT
     ======================================================-->       
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column section-animate" id="contact-section">
           <div class="row my-auto" id="contact"> 
             <div class="col-md-8">
               <div class="contact-cont">
@@ -404,373 +431,290 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     </div>
 
 <!--====================================================
-                    PORTFOLIO MODALS
+                    PORTFOLIO MODALS (Aditya-style)
 ======================================================-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" >
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal">
-                  <div class="lr">
-                      <div class="rl"></div>
-                  </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content project-modal-content">
+              <div class="project-modal-header">
+                  <h2 class="project-modal-title">Soco Magicalladin</h2>
+                  <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
               </div>
-              <div class="container">
-                  <div class="row">
-                    <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">Soco Magicalladin</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/soco/soco1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  - Developing web-based applications using the Laravel framework that functions to manage seller, supplier, courier, and buyer. <br>
-                                  - Integrate to Payment Gateway. <br>
-                                  - Collaborate with vendor who help to integrate API Online Shop (Shopee, Tokopedia, Lazada). <br>
-                                  - Deploy to server. <br>
-                                  - Maintencance and customs feature.
-                                </p>
-                                <a href="soco.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
+              <div class="modal-body project-modal-body">
+                  <div class="project-modal-img mb-4">
+                      <img class="img-fluid rounded" src="img/portfolio/soco/soco1.PNG" alt="Soco Magicalladin">
+                  </div>
+                  <h4 class="project-modal-heading">About this project</h4>
+                  <p>Social Commerce that provides a solution for sellers to sell without capital. Sellers just register and can search for products to sell. Products come from supplier accounts who upload products; sellers take the items and share links so buyers can checkout. The purchase funds to suppliers are financed (advanced) and a fee percentage is charged.</p>
+                  <h4 class="project-modal-heading">What I do</h4>
+                  <ul class="project-modal-list">
+                      <li>Developing web-based applications using the Laravel framework that functions to manage seller, supplier, courier, and buyer.</li>
+                      <li>Integrate to Payment Gateway.</li>
+                      <li>Collaborate with vendor who help to integrate API Online Shop (Shopee, Tokopedia, Lazada).</li>
+                      <li>Deploy to server.</li>
+                      <li>Maintenance and custom features.</li>
+                  </ul>
+                  <h4 class="project-modal-heading">Tech Stack</h4>
+                  <div class="project-modal-tags">
+                      <span class="project-tag">Laravel</span>
+                  </div>
+                  <div class="mt-4">
+                      <a href="soco.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                      <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                   </div>
               </div>
           </div>
       </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">Customs BC</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/customs/customs1.PNG" alt="Customs BC">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Social Commerce that provides a solution for sellers to sell without capital. Sellers just register and can search for products to sell. Products come from supplier accounts who upload products; sellers take the items and share links so buyers can checkout. The purchase funds to suppliers are financed (advanced) and a fee percentage is charged.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing web-based applications using the Laravel framework that functions to manage stock and auto generate excise, tax, and other fees, so speed up operational at PLB Ecommerce, Lazada is one of its clients.</li>
+                        <li>Collaborate with team on operational to fixing bugs.</li>
+                        <li>Deploy to server.</li>
+                        <li>Maintenance and custom features.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">Queue Job</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="customs.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">Customs BC</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/customs/customs1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing web-based applications using the Laravel framework that functions to manage stock and auto generate excise, tax, and other fees, so speed up operational at PLB Ecommerce, Lazada is one of its clients. <br>
-                                  -	Collaborate with team on operational to fixing bugs. <br>
-                                  -	Deploy to server. <br>
-                                  -	Maintencance and customs feature.
-                                </p>
-                                <a href="customs.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">Store2Go</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/store2go/store2go1.PNG" alt="Store2Go">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Web app like a warehouse management system connected to several e-commerce platforms such as Tokopedia, Shopee, and TikTok.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing web-based applications using the Laravel framework that functions to provide warehouse system and omnichannel to manage stock for seller online shop.</li>
+                        <li>Integrate Payment Gateway Duitku.</li>
+                        <li>Integrate API Shopee and Tokopedia.</li>
+                        <li>Maintenance and custom features.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">Laravel</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="store2go.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">Store2go</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/store2go/store2go1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing web-based applications using the Laravel framework that functions to provide warehouse system and omnichannel to manage stock for seller online shop. <br>
-                                  -	Integrate Payment Gateway. <br>
-                                  -	Integrate API Shopee and Tokopedia. <br>
-                                  -	Maintencance and customs feature.
-                                </p>
-                                <a href="store2go.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">MRBS</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/mrbs/mrbs1.PNG" alt="MRBS">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Web app for room booking.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing web-based applications using the Open Source Code PHP Native that functions to book meetings.</li>
+                        <li>Integrate to API Zoom and Meeting API.</li>
+                        <li>Custom features according to user needs.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">Laravel</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="mrbs.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">MRBS</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/mrbs/mrbs1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing web-based applications using the Open Source Code PHP Native that functions to booking meeting. <br>
-                                  - Integrate to API Zoom and Meeting API. <br>
-                                  - Customs according to user needs.
-                                </p>
-                                <a href="mrbs.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">UniairOne</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/uniairone/uniairone1.PNG" alt="UniairOne">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Web app for managing HRIS-related data such as employee data, department, leave, permission, mutation, etc.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing web-based applications using the Laravel framework that functions to manage human resource from presence, leave, chart, and etc.</li>
+                        <li>Maintenance and custom features.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">Cron job</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="uniairone.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">UNIAIR ONE</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/uniairone/uniairone1.png" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing web-based applications using the Laravel framework that functions to manage human resource from presesence, leave, chart, and etc. <br>
-                                  -	Maintencance and customs feature
-                                </p>
-                                <a href="uniairone.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>    
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">Evoucher</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/evoucher/evoucher1.PNG" alt="Evoucher">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Web app for managing finance such as cash advance requests, settlement, approval, etc.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing web-based applications using the Laravel framework that functions to manage finance from request, approval, accounting, cashier, report, and etc.</li>
+                        <li>Maintenance and custom features.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">Cron job</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="evoucher.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">Evoucher</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/evoucher/evoucher1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing web-based applications using the Laravel framework that functions to manage finance from request, approval, accounting, cashier, report, and etc. <br>
-                                  -	Maintencance and customs feature
-                                </p>
-                                <a href="evoucher.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">Inmeterai</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/inmeterai/inmeterai1.PNG" alt="Inmeterai">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Web app for selling authentic Peruri e-stamps with features such as single stamp for personal accounts; for enterprise accounts besides single stamp there are also single stamp with template and bulk stamp. Payment uses Finpay payment gateway.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing web-based applications using Java Spring Boot and React JS that functions to manage document stamping.</li>
+                        <li>Integration to API Peruri.</li>
+                        <li>Deploy to server.</li>
+                        <li>Maintenance and custom features.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">Spring Boot</span>
+                        <span class="project-tag">React JS</span>
+                        <span class="project-tag">RabbitMQ</span>
+                        <span class="project-tag">Docker</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="inmeterai.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                    <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">Inmeterai</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/inmeterai/inmeterai1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing web-based applications using the Java Springboot and React Js that functions to manage stamping document. <br>
-                                  -	Integrasi to API Peruri. <br>
-                                  -	Deploy to server. <br>
-                                  -	Maintencance and customs feature.
-                                </p>
-                                <a href="inmeterai.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">TPS Online</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/tps/tps1.PNG" alt="TPS Online">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>Desktop app for inserting gate in/gate out data that is automatically sent to customs.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Maintenance and custom features for TPS Online Desktop Application that functions to manage stockpiling of imported and exported goods for further transportation.</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">C#</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="tps.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">TPS Online</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/tps/tps1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Maintencance and customs feature TPS Online Desktop Application that functions to manage stockpiling imported and exported goods for further transportation.
-                                </p>
-                                <a href="tps.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div> 
     <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <h2 class="project-modal-title">RPA Manifest PLB Ecommerce</h2>
+                    <button type="button" class="project-modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body project-modal-body">
+                    <div class="project-modal-img mb-4">
+                        <img class="img-fluid rounded" src="img/portfolio/rpa/rpa1.PNG" alt="RPA Manifest PLB">
+                    </div>
+                    <h4 class="project-modal-heading">About this project</h4>
+                    <p>App to automate repetitive processes in the gate-out process at PLB ecommerce warehouse.</p>
+                    <h4 class="project-modal-heading">What I do</h4>
+                    <ul class="project-modal-list">
+                        <li>Developing robotic process automation using UIBot that functions to automate repetitive processes on manifest sent to Bea Cukai (Customs).</li>
+                    </ul>
+                    <h4 class="project-modal-heading">Tech Stack</h4>
+                    <div class="project-modal-tags">
+                        <span class="project-tag">UIBot</span>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="rpa.html" class="btn btn-general btn-white" target="_blank">View full page</a>
+                        <button type="button" class="btn btn-general btn-green ml-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="modal-body">
-                            <div class="title-bar">
-                              <div class="col-md-12">
-                                <h2 class="text-center">Robotic Process Automation Manifest PLB Ecommerce</h2>
-                                <div class="heading-border"></div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/rpa/rpa1.PNG" alt="">
-                              </div>
-                              <div class="col-md-6">
-                                <p>
-                                  -	Developing robotic process automation using UI Bot that functions to automate repetition process on manifest send to Bea Cukai.
-                                </p>
-                                <a href="rpa.html" class="btn btn-success" target="_blank">
-                                    <i class="fa fa-search-plus"></i> Detail
-                                </a> <br> <br>
-                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            </div>
             </div>
         </div>
     </div> 
@@ -813,6 +757,22 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             });
 
         });
+
+        // Section enter animation (PowerPoint-style) - trigger when section comes into view
+        (function() {
+            var sections = document.querySelectorAll('.section-animate');
+            if (!sections.length) return;
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('section-visible');
+                    }
+                });
+            }, { rootMargin: '0px 0px -80px 0px', threshold: 0.1 });
+            sections.forEach(function(section) {
+                observer.observe(section);
+            });
+        })();
     </script> 
 </body>
 
