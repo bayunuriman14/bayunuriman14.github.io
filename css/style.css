@@ -45,6 +45,11 @@
 #skills.section-visible .stack-category:nth-child(2) { animation-delay: 0.2s; }
 #skills.section-visible .stack-category:nth-child(3) { animation-delay: 0.3s; }
 #skills.section-visible .stack-category:nth-child(4) { animation-delay: 0.4s; }
+#skills.section-visible .stack-category:nth-child(5) { animation-delay: 0.5s; }
+#skills.section-visible .stack-category:nth-child(6) { animation-delay: 0.55s; }
+#skills.section-visible .stack-category:nth-child(7) { animation-delay: 0.6s; }
+#skills.section-visible .stack-category:nth-child(8) { animation-delay: 0.65s; }
+#skills.section-visible .stack-category:nth-child(9) { animation-delay: 0.7s; }
 
 @keyframes sectionSlideUp {
     from {
@@ -505,7 +510,7 @@ body .subheading {
 
 /* Aditya-style project detail modal */
 .portfolio-modal .modal-dialog.modal-lg {
-    max-width: 720px;
+    max-width: 960px;
     margin: 1.75rem auto;
 }
 
@@ -558,6 +563,115 @@ body .subheading {
 .portfolio-modal .project-modal-img img {
     width: 100%;
     display: block;
+}
+
+/* Hero image only (first screenshot) */
+.portfolio-modal .project-modal-gallery {
+    margin-bottom: 1rem;
+}
+
+.portfolio-modal .project-modal-gallery img {
+    width: 100%;
+    display: block;
+}
+
+/* More Screenshots: smaller thumbnails, left-aligned, side by side */
+.portfolio-modal .project-modal-more-screenshots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.portfolio-modal .project-modal-more-screenshots .more-screenshots-item {
+    position: relative;
+    flex: 0 0 calc(50% - 0.625rem);
+    max-width: calc(50% - 0.625rem);
+    align-self: flex-start;
+}
+
+.portfolio-modal .project-modal-more-screenshots .more-screenshots-item img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Tombol kaca pembesar di atas gambar */
+.portfolio-modal .project-modal-more-screenshots .more-screenshots-zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+    z-index: 2;
+}
+
+.portfolio-modal .project-modal-more-screenshots .more-screenshots-zoom:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+/* Lightbox popup gambar lebih besar */
+.screenshot-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.screenshot-lightbox.is-open {
+    display: flex;
+}
+
+.screenshot-lightbox img {
+    max-width: 95%;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.screenshot-lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.screenshot-lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #fff;
 }
 
 .portfolio-modal .project-modal-heading {
