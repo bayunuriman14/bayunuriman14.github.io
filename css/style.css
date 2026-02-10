@@ -173,8 +173,8 @@ body .subheading {
           padding: 0.5rem;
       }
       #sideNav .navbar-brand .img-profile {
-          max-width: 10rem;
-          max-height: 10rem;
+          max-width: 12rem;
+          max-height: 12rem;
           border: 0.5rem solid rgba(255, 255, 255, 0.2);
       }
       #sideNav .navbar-collapse {
@@ -284,7 +284,7 @@ body .subheading {
                       ABOUT
 ====================================================*/
   #about {
-      background-image: url(../img/working1920.jpg); 
+      background-image: url(../img/setup-modern.jpg); 
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -1270,6 +1270,65 @@ a:hover, a:focus, a:active {
     color: #e4e6eb;
 }
 
+/* Brand-colored social icons in About section */
+.list-social-icons a .fa-circle {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.list-social-icons a[href*="whatsapp"] .fa-circle {
+    color: #25D366; /* WhatsApp green */
+}
+
+.list-social-icons a[href*="linkedin"] .fa-circle {
+    color: #0A66C2; /* LinkedIn blue */
+}
+
+.list-social-icons a[href*="gitlab"] .fa-circle {
+    color: #e24329; /* GitLab orange */
+}
+
+.list-social-icons a:hover .fa-circle {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Floating section navigation buttons */
+.section-nav-buttons {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 999;
+}
+
+.section-nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid #4b5563;
+    background: rgba(17, 24, 39, 0.9);
+    color: #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-nav-btn i {
+    font-size: 0.9rem;
+}
+
+.section-nav-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
 .list-icons .list-inline-item i:hover {
     color: #e4e6eb;
 }
@@ -1297,7 +1356,7 @@ section.resume-section {
 
 /* About - dark overlay on background image */
 #about {
-    background-image: linear-gradient(rgba(26, 29, 33, 0.85), rgba(26, 29, 33, 0.75)), url(../img/working1920.jpg);
+    background-image: linear-gradient(rgba(26, 29, 33, 0.85), rgba(26, 29, 33, 0.75)), url(../img/setup-modern.jpg);
 }
 
 #about h1, #about .subheading, #about p {
@@ -1413,6 +1472,50 @@ section.resume-section {
 /* Contact - dark */
 #contact {
     background: #16181c;
+}
+
+.contact-section-title {
+    color: #e4e6eb;
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
+
+.contact-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact-info-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9ca3af;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.2s ease;
+}
+
+.contact-info-item:hover {
+    color: #60a5fa;
+}
+
+.contact-info-icon {
+    font-size: 1.25rem;
+}
+
+.contact-info-item:first-child .contact-info-icon {
+    color: #25D366;
+}
+
+.contact-info-item:last-child .contact-info-icon {
+    color: #60a5fa;
+}
+
+.contact-form-intro {
+    color: #9ca3af;
+    font-size: 0.95rem;
 }
 
 #contact .contact-cont h3,
